@@ -1,6 +1,8 @@
 version = "0.1.0"
 name = "deplo-slack"
-author = "Takehiro Iyatomi (iyatomi@gmail.com)"
+author = { name = "Takehiro Iyatomi", email = "iyatomi@gmail.com" }
 entrypoints = {
-    workflow = "./entrypoint.sh"    
+    workflow = {
+        linux = ["bash", "./entrypoint.sh"]
+    }
 }
